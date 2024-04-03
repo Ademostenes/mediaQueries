@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(window).load(function() {
+var pantallaWidth = screen.width;
+var pantallaHeight = screen.height;
+var ventanaWidth = window.innerWidth;
+var ventanaHeight = window.innerHeight;
+const paginaWidth  = document.documentElement.scrollWidth;
+const paginaHeight = document.documentElement.scrollHeight;
+var x = document.getElementById("pantalla");
+x.innerHTML = "Pantalla: width: " + pantallaWidth + ", height: " + pantallaHeight + ".";
+var y = document.getElementById("ventana");
+y.innerHTML = "Ventana: width: " + ventanaWidth + ", height: " + ventanaHeight + ".";
+var z = document.getElementById("pagina");
+z.innerHTML = "Pagina: width:" + paginaWidth + ", height: " + paginaHeight + ".";
+})  
+$(window).resize(function() {
+var pantallaWidth = screen.width;
+var pantallaHeight = screen.height;
+var ventanaWidth = window.innerWidth;
+var ventanaHeight = window.innerHeight;
+const paginaWidth  = document.documentElement.scrollWidth;
+const paginaHeight = document.documentElement.scrollHeight;
+var x = document.getElementById("pantalla");
+x.innerHTML = "Pantalla: width: " + pantallaWidth + ", height: " + pantallaHeight + ".";
+var y = document.getElementById("ventana");
+y.innerHTML = "Ventana: width: " + ventanaWidth + ", height: " + ventanaHeight + ".";
+var z = document.getElementById("pagina");
+z.innerHTML = "Pagina: width:" + paginaWidth + ", height: " + paginaHeight + ".";
+})
+</script>
+    <title>Prueba MediaQueries</title>
+</head>
+<body class = "example">
+    <p id="pantalla"></p>
+    <p id="ventana"></p>
+    <p id="pagina"></p>
+    </body>
+</body>
+</html>
